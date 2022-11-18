@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar navbar3">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="order.html">Order Now</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">ORDER YOUR FOOD HERE</h2>
+
+            <form action="connection.php" class="order" method="post">
+                <fieldset>
+
+                    
+    
+                    <div class="food-menu-desc">                        
+                        <div class="order-label">name of the food</div>
+                        <input type="" name="qty" class="input-responsive" placeholder="Type the food name here" required>
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Fill out Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full_Name" placeholder="E.g. Shubhadweep santra" class="input-responsive" id="full_Name" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="phone_number" placeholder="E.g. +91 XXXXXXXXXX" class="input-responsive" id="phone_number" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. Abcd@gmail.com" class="input-responsive" id="email" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="5" placeholder="E.g. lane no. streetname"class="input-responsive"id= "address" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                </fieldset>
+
+            </form>
+
+        </div>
+    </section>
+    <!-- fOOD sEARCH Section Ends Here -->
+
+    <!-- social Section Starts Here -->
+    
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section class="footer navbar2">
+        <div class="container text-center">
+            <p>Designed By <a href="about.html">Shubhadweep</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+
+</body>
+</html>
