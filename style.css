@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.main-1{
+    
+    background-color: #1d2026;
+    min-height: 180vh;
+    width: 100%;
+    color:#fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav.menu-img{
+    width: 25px;
+    margin-right: 20px;
+    
+}
+nav.logo{
+    width: 160px;
+    
+}
+nav ul{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 0 20px;
+    
+
+}
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+}
+button{
+   background: #efefef;
+   height: 30px;
+   width: 60px;
+   border-radius: 20px;
+   border: 0;
+   outline: 0;
+   cursor: pointer; 
+   transition: background 0.5s;
+   
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width:26px;
+    border-radius: 60%;
+    margin-left: 2px;
+    transition: background 0.5s,margin-left 0.5s;
+}
+.lamp-Container{
+    position: absolute;
+    top:-20px;
+    left:22%;
+    width: 200px;
+
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position:absolute;
+    top: 375px;
+    left:45%;
+    transform:translate(-50%);
+    width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left:50%
+
+}
+.text-container h1{
+    font-size:50px;
+    font-weight: 400;
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    color: #fff;
+    font-size:18px;
+    margin-top:20px
+}
+.active{
+    background:green ;
+
+}
+.active span{
+    background:#fff ;
+    margin-left: 30px;
+}
+.on{
+    opacity: 1;
+}

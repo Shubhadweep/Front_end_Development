@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBPAGE USING HTML,CSS, JAVASCRIPT</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "main-1">
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">contemporary</a></li>
+                <li><a href="">Affodable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+
+        </nav>
+
+        <div class ="lamp-Container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>Life is a mixture of light and shadow, calm and storm, <br>and it's all good.
+            </h1>
+            <p>
+                Where there is light, there must be shadow, and where there is shadow there must be light. There is no shadow without light and no light without shadow.
+            </p>
+            <a href="">Check all Collections</a>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>
